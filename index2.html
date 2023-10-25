@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;700;800&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="treino.css">
 </head>
 <body>
     <header>
         <nav class="navegation">
             <a href="#">
-                <img src="img/teste..webp" alt="Logo Da Marca" class="logo"></a>
+                <img src="img/nike.jpg" alt="Logo Da Marca" class="logo"></a>
             <ul>
                 <li><a href="#">Calçados</a></li>
                 <li><a href="#">Camisas</a></li>
@@ -27,19 +38,19 @@
             <div class="main-text">
                 <img src="" alt="">
                 <h3>Seu Novo super tecnologico tenis</h3>
-                <p>Tenis com uma qualidade impressionante, um aumento notavel na tecnolocia com muito mais durabilidade <br> novo tenis ainda vem com varios tamanhos e promoçoes </p>
+                <p>Tenis com uma qualidade impressionante, um aumento notavel na tecnolocia com muito mais durabilidade  novo tenis ainda vem com varios tamanhos e promoçoes </p>
                 <h6>A partir de 699,99</h6>
                 <a href="#" class="btn">Comprar</a>
                 <div class="text">
                     <h5>Escolha sua Cor</h5>
                 </div>
                 <div class="content">
-                    <span id="green" onclick="imgSlider('img/orange.jpg')"></span>
-                    <span id="pink" onclick="imgSlider('img/yellow.jpg')"></span>
-                    <span id="blue" onclick="imgSlider('img/blue.jpg')"></span>
-                    <span id="black" onclick="imgSlider('img/black.jpg')"></span>
-                    <span id="white" onclick="imgSlider('img/white.jpg')"></span>
-                    <span id="red" onclick="imgSlider('img/red.jpg')"></span>
+                    <span id="green" onclick="imgSlider('img/orange.jpg'); circleCharge('#F28705')"></span>
+                    <span id="pink" onclick="imgSlider('img/yellow.jpg'); circleCharge('#FFE71C')"></span>
+                    <span id="blue" onclick="imgSlider('img/blue.jpg'); circleCharge('#2C32FF')"></span>
+                    <span id="black" onclick="imgSlider('img/black.jpg'); circleCharge('#2B2929')"></span>
+                    <span id="white" onclick="imgSlider('img/white.jpg'); circleCharge('#fff')"></span>
+                    <span id="red" onclick="imgSlider('img/red.jpg');circleCharge('#D93636')"></span>
             
                 </div>
             </div>
@@ -51,6 +62,12 @@
     <script type="text/javascript">
         function imgSlider(e){
         document.querySelector('#boot').src = e;
+        }
+
+        function circleCharge(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
         }
     </script>
 </body>
