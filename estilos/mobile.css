@@ -1,0 +1,62 @@
+@media screen and (max-width:760px) {
+    .material-symbols-outlined{
+        display: block;
+        color: white;
+        padding: 0 10px;
+    }
+    .material-symbols-outlined:hover{
+       
+        color: black;
+        cursor: pointer;
+    }
+    .navegation > ul{
+
+        display: none;
+    }
+    .logo{
+        width: 160px;
+        
+    }
+    .navegation .logo {
+        display: none;
+       
+    }
+
+    .main-text > h3{
+        margin-top: -90%;
+        font-size: 36px;
+    }
+    .total {
+        min-height: 60vh;
+    }
+
+    .circle{
+        position: fixed;
+        width: 790px;
+        height: 790px;
+        border-radius: 50%;
+        background-color:orange;
+        bottom: -50%; 
+        right: -23%;
+        z-index: -1;
+    }
+
+    img#boot {
+        position: absolute;
+        top: 50%;
+        right: 30%;
+        transform: translate(-150%, 200px);
+        align-items: center;
+        justify-content: center;
+        width: 120px; 
+        height: 120px;
+    }
+
+    #boot{
+        width: 550px; 
+        height: 550px;
+    }
+
+   
+
+}

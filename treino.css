@@ -1,4 +1,7 @@
+@import url(estilos/mobile.css);
+
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,6 +10,9 @@
    
     
 }
+
+
+
 body{
     background-color: #e8e6e7;
     overflow: hidden;
@@ -19,7 +25,9 @@ header {
     background-color: rgba(0, 0, 0, 0.842);
 }
 
-
+.material-symbols-outlined{
+    display: none;
+}
 
 .navegation{
     display: flex;
@@ -62,9 +70,7 @@ header {
     display: flex;
 }
 
-.logo{
-   
-}
+
 .circle{
    
    position: fixed;
