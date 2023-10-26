@@ -11,11 +11,20 @@
     }
     .navegation > ul{
 
-        display: none;
+        display: block;
     }
     .logo{
         width: 160px;
         
+    }
+
+  
+    .navegation ul li a {
+        display: none;
+    }
+
+    .navegation .logo{
+        display: none;
     }
     .navegation .logo {
         display: none;

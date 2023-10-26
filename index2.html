@@ -28,7 +28,14 @@
         <span class="material-symbols-outlined" onclick="clikMenu()">
             menu
             </span>
-        <nav class="navegation">
+        <nav class="navegation" id="itens">
+            
+            
+            <div class="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <a href="#">
                 <img src="img/nike.jpg" alt="Logo Da Marca" class="logo"></a>
             <ul>
@@ -78,6 +85,14 @@
             circle.style.background = color;
 
         }
+
+        function clickMenu() {
+          if  (itens.style.display = 'block'){
+               itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
     </script>
 </body>
 </html>

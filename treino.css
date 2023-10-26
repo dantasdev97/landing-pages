@@ -29,6 +29,10 @@ header {
     display: none;
 }
 
+.nav {
+    display: none;
+}
+
 .navegation{
     display: flex;
     align-items: center;
